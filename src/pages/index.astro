@@ -1,6 +1,8 @@
 ---
 
 import Layout from '../layouts/Layout.astro';
+import Header from "../components/Header.astro";
+import FancyApp from "../components/react/FancyApp.jsx";
 
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
@@ -8,5 +10,6 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout>
-	<h2 class="font-bold">hello world</h2>
+
+    <FancyApp client:load />
 </Layout>

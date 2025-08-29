@@ -1,0 +1,42 @@
+---
+import '../styles/styles/header/header.css'
+import Github from "./icons/github.astro";
+import profile from '../assets/me/profile.jpg'
+---
+
+
+
+<header id="header">
+    <div class="left">
+        <div tabindex="-1" class="profile ">
+            <div class="content ripple ">
+                <div class="head">
+                    <img class="profile-img" src={profile.src} width={profile.width} height={profile.height} alt="">
+                    <div>
+                        <p class="username">ashkan amjadi</p>
+                        <p class="sub">full stack web developer 👨‍💻</p>
+
+                    </div>
+                </div>
+                <div class="details">
+                </div>
+            </div>
+        </div>
+        <a href="https://github.com/AshkanAmjadi" target="_blank" class="github">
+            <Github />
+        </a>
+    </div>
+    <div class="middle">
+    </div>
+    <div class="right">
+        <div class="darkBtn ripple border-animation" onclick="document.documentElement.classList.toggle('dark');localStorage.setItem('theme' , document.documentElement.classList.contains('dark') ? 'dark' : '')">
+            <div class="content">
+                dark
+            </div>
+        </div>
+    </div>
+    <span id="header-bg">
+      <span class="noiseimg"></span>
+</span>
+</header>
+
