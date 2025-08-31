@@ -4,3 +4,8 @@
     width: clamp(200px, 30vw , 300px);
 
 }
+#skills{
+
+    padding: 0 min(10vw , 300px) 0;
+
+}

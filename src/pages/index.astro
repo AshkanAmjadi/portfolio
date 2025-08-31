@@ -3,6 +3,7 @@
 import Layout from '../layouts/Layout.astro';
 import '../styles/styles/pages/index.css';
 import HeroSection from "../components/react/HeroSection";
+import Skills from "../components/react/Skills";
 
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
@@ -10,6 +11,7 @@ import HeroSection from "../components/react/HeroSection";
 ---
 
 <Layout>
-
     <HeroSection client:load />
+    <Skills client:load />
+
 </Layout>

@@ -48,6 +48,7 @@ body {
 .text-xl { font-size: var(--fs-larger); }
 .text-2xl { font-size: var(--fs-largest); }
 .text-3xl { font-size: var(--fs-x-larger); }
+.text-3-5xl { font-size: var(--fs-xl-largest); }
 .text-4xl { font-size: var(--fs-xx-largest); }
 
 .text-muted { color: var(--text-muted); }
@@ -64,7 +65,7 @@ body {
     border-radius: var(--radius-lg);
     padding: var(--space-lg);
     box-shadow: var(--shadow);
-    transition: all 0.2s ease;
+    transition: all 0.5s ease;
 }
 
 .card:hover {
@@ -288,11 +289,6 @@ body {
     justify-content: space-between;
 }
 
-.gap-xs { gap: var(--space-xs); }
-.gap-sm { gap: var(--space-sm); }
-.gap-md { gap: var(--space-md); }
-.gap-lg { gap: var(--space-lg); }
-.gap-xl { gap: var(--space-xl); }
 
 /* Spacing Utilities */
 .p-xs { padding: var(--space-xs); }
@@ -346,12 +342,21 @@ body {
 
 @media (max-width: 768px) {
     .grid-cols-2,
-    .grid-cols-3,
+
     .grid-cols-4 {
         grid-template-columns: 1fr;
     }
+
+
     
 }
+
+.gap-xs { gap: var(--space-xs); }
+.gap-sm { gap: var(--space-sm); }
+.gap-md { gap: var(--space-md); }
+.gap-lg { gap: var(--space-lg); }
+.gap-xl { gap: var(--space-xl); }
+
 
 /* Animation Classes */
 @keyframes fadeIn {

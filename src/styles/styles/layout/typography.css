@@ -1,5 +1,6 @@
 :root {
     --fs-xx-largest: calc(4vw + 14pt);
+    --fs-xl-largest: calc(2.5vw + 14pt);
     --fs-x-largest: calc(1.2vw + 14pt);
     --fs-x-larger: calc(.9vw + 14pt);
     --fs-x-larg: calc(.6vw + 14pt);
