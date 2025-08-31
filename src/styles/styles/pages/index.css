@@ -4,8 +4,13 @@
     width: clamp(200px, 30vw , 300px);
 
 }
-#skills{
 
-    padding: 0 min(10vw , 300px) 0;
-
+.text-instagram-gradiant {
+    background: #833ab4;
+    background: linear-gradient(
+            to right,
+            #833ab4,#fd1d1d,#fcb045
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }

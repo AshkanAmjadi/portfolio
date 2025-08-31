@@ -12,9 +12,12 @@ import Header from "../components/Header.astro";
     <meta name="generator" content={Astro.generator}/>
     <title>ashakn amjadi</title>
     <script>
-        localStorage.getItem('theme') === 'dark'
-            ? document.documentElement.classList.add('dark')
-            : document.documentElement.classList.remove('dark')
+        if (!localStorage.getItem('theme') || localStorage.getItem('theme') === 'dark'){
+            document.documentElement.classList.add('dark')
+        }else {
+            document.documentElement.classList.remove('dark')
+        }
+
     </script>
 </head>
 <body class="squar-bg">

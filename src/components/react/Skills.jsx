@@ -1,9 +1,89 @@
-import {motion} from "framer-motion";
-
+import {motion } from "framer-motion";
+import '../../styles/styles/pages/skills.css'
+import Counter from "./components/Counter.jsx";
+import {useState} from "react";
 
 export default function Skills() {
 
-    const array = [...Array(3).keys()]
+    const [frontend, setFrontend] = useState([
+
+        {
+            name: 'HTML',
+            color: '#E15026',
+            image: '/icon/html-mini.svg',
+            percent : 98,
+            observed : false
+        },
+        {
+            name: 'CSS',
+            color: '#663693',
+            image: '/icon/css-mini.svg',
+            percent : 90,
+            observed : false
+        },
+        {
+            name: 'Java Script',
+            color:  '#EDCB00',
+            image: '/icon/js-mini.svg',
+            percent: 86,
+            observed : false
+        },
+        {
+            name: 'tailwind css',
+            color:  '#23BBBC',
+            image: '/icon/tailwind-mini.svg',
+            percent: 90,
+            observed : false
+        },
+        {
+            name: 'React Js',
+            color:  '#4CC7ED',
+            image: '/icon/react-mini.svg',
+            percent: 40,
+            observed : false
+        },
+        {
+            name: 'Astro Js',
+            color: '#FF5D01',
+            image: '/icon/astro-mini.svg',
+            percent: 30,
+            observed : false
+        },
+        {
+            name: 'Vue Js',
+            image: '/icon/vue-mini.svg',
+        },
+        {
+            name: 'Next Js',
+            image: '/icon/next-mini.svg'
+        }
+
+    ])
+
+    const [backend, setBackend] = useState([
+        {
+            name: 'PHP',
+            color: '#502C86',
+            image: '/icon/php-mini.svg',
+            percent : 80,
+            observed : false
+        },
+        {
+            name: 'Laravel',
+            color: '#EC1C24',
+            image: '/icon/laravel-mini.svg',
+            percent : 90,
+            observed : false
+        },
+        {
+            name: 'Express Js',
+            image: '/icon/express-mini.svg',
+        },
+        {
+            name: 'Node Js',
+            image: '/icon/node-mini.svg'
+        }
+    ])
 
     return (
 
@@ -18,45 +98,84 @@ export default function Skills() {
                     translateY: 0,
 
                 }}
-                transition={{delay: .7, duration: 2 , ease: [0.053, 0.809, 0.229, 1]}}
+                transition={{delay: .7, duration: 2, ease: [0.053, 0.809, 0.229, 1]}}
             >
-                <h2 className='text-3-5xl font-bold mb-32'>
-                    skills
+                <h2 className='text-3-5xl font-bold mb-12'>
+                    <span className='text-instagram-gradiant'>Frontend</span> Skills
                 </h2>
             </motion.div>
 
 
-
-            <div id='skills' className='grid grid-cols-2 gap-xl  w-full'>
+            <div id='skills' className='grid grid-cols-3 gap-xl  w-full overflow-hidden '>
 
                 {
-                    array.map(()=> {
-                        return (<motion.div
+                    frontend.map((item, index) => {
+                        return (
+                            <motion.div
+                                className='max-md:!col-span-1 last:col-span-2 '
+                                key={index}
+                                initial={{opacity: 0, scale: 1.2, filter: 'blur(8px)', translateY: 40, '--os': '0%'}}
+                                whileInView={{
+                                    opacity: 1,
+                                    scale: 1,
+                                    filter: 'blur(0)',
+                                    translateY: 0,
+                                    '--os': item.percent + '%'
+                                }}
+                                viewport={{once: true}}
+                                transition={{
+                                    duration: 1.2, ease: [0.002, 0.567, 0, 1.003],
+                                    '--os': {
+                                        delay: 1,
+                                        duration: 1.5,
+                                        ease: [0.002, 0.567, 0, 1.003]
+                                    }
 
-                            initial={{opacity: 0, filter: 'blur(12px)', translateX: 20}}
-                            whileInView={{opacity: 1, filter: 'blur(0)', translateX: 0}}
-                            transition={{duration: 1.2, ease: [0.002, 0.567, 0, 1.003]}}
-                        >
-                            <div className='skill card'>
+                                }}
+                                onAnimationStart={() => {
+                                    const newFrontend = frontend.map(e => {
+                                        if (item.name === e.name) {
+                                            e.observed = true;
+                                        }
+                                        return e;
+                                    })
 
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad consequuntur cupiditate
-                                delectus dolorem, doloribus hic id maxime minima mollitia, nam neque odit officia
-                                pariatur quae quasi quisquam quod rem repellat rerum sequi similique sint temporibus
-                                tenetur vel vero voluptate voluptates. Animi dolor dolorem, eligendi eum id itaque
-                                perferendis voluptas voluptatum. A beatae delectus dolor eligendi, eos, fuga impedit
-                                iste labore laborum, modi nemo reiciendis rerum ut veniam voluptatem! Ab animi at, cum
-                                eligendi saepe voluptatum? Accusamus accusantium adipisci commodi, deleniti dicta
-                                dolorem doloribus, explicabo harum hic impedit laborum libero magni minima nesciunt non
-                                odio perferendis recusandae reiciendis sapiente similique, voluptatem.
+                                    setFrontend(newFrontend)
+                                }}
+                            >
+                                <div
+                                    className={`skill skill-${index}  flex items-center gap-6 max-md:p-5 mt-1 mb-1 ${item.observed && item.percent ? '' : 'opacity-45'}`}
+                                    style={{'--color': item.color}}>
 
-                            </div>
+                                    <div>
+                                        <img src={item.image} className='skill-img'/>
+                                    </div>
+                                    <div>
+                                        <p className='font-extrabold text-lg'>
+                                            {item.name}
+                                        </p>
 
-                        </motion.div>)
+                                        {
+                                            item.observed && item.percent
+                                                ? <Counter from={0} to={item.percent} duration={1.5}
+                                                           ease={[0.002, 0.567, 0, 1.003]}/>
+                                                : 'queued'
+                                        }
+                                    </div>
+
+                                </div>
+
+                            </motion.div>
+                        )
                     })
                 }
 
 
             </div>
+
+
+            
+
 
 
         </div>
