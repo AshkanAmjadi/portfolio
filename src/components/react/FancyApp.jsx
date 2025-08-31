@@ -10,7 +10,7 @@ export default function FancyApp() {
             <motion.div
                 key={count}
                 initial={{opacity: 0, filter: 'blur(5px)' , display : 'none' }}
-                animate={{opacity: 1, filter: 'blur(0)' ,display : 'block' , transition: { delay:0.1, duration: 0.1 }}}
+                animate={{opacity: 1, filter: 'blur(0)' ,display : 'block' , transition: { delay:0.1, duration: .5 }}}
                 exit={{opacity: 0, filter: 'blur(20px)'  , transition: { delay: 0, duration: 0.05 }}}
                 style={{padding: "2rem"}}
             >

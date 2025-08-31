@@ -1,8 +1,8 @@
 ---
 
 import Layout from '../layouts/Layout.astro';
-import Header from "../components/Header.astro";
-import FancyApp from "../components/react/FancyApp.jsx";
+import '../styles/styles/pages/index.css';
+import HeroSection from "../components/react/HeroSection";
 
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
@@ -11,5 +11,5 @@ import FancyApp from "../components/react/FancyApp.jsx";
 
 <Layout>
 
-    <FancyApp client:load />
+    <HeroSection client:load />
 </Layout>
