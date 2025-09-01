@@ -19,7 +19,7 @@ export default function HeroSection() {
     }, [])
 
     return (
-        <div className='flex flex-col items-center w-full overflow-hidden py-10'>
+        <div id='heroSection' className='flex flex-col items-center justify-center w-full  overflow-hidden'>
             <motion.div
                 key='heroImage'
                 initial={{opacity: 0, filter: 'blur(20px)', scale: 1.5}}
@@ -123,7 +123,6 @@ export default function HeroSection() {
                 scoops.forEach((e, index, array) => {
                     if (index === scoop) {
                         setScope(e)
-                        console.log(array.length - 1, scoop)
                         if (array.length - 1 === scoop) {
                             scoop = -1
                         }

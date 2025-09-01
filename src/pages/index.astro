@@ -1,9 +1,10 @@
 ---
 
 import Layout from '../layouts/Layout.astro';
-import '../styles/styles/pages/index.css';
+import '../styles/styles/pages/index/index.css';
 import HeroSection from "../components/react/HeroSection";
 import Skills from "../components/react/Skills";
+import TechGrid from "../components/react/TechGrid";
 
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
@@ -12,6 +13,7 @@ import Skills from "../components/react/Skills";
 
 <Layout>
     <HeroSection client:load />
-    <Skills client:load />
+    <TechGrid client:visible />
+    <Skills client:visible />
 
 </Layout>

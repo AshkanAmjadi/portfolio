@@ -1,0 +1,38 @@
+#skills{
+
+    padding: 20px min(6vw , 300px);
+
+}
+
+.skill-img {
+    @apply min-w-20 max-md:min-w-12;
+
+}
+
+
+.skill:before,.skill:after{
+    content: '';
+    position: absolute;
+    inset: -1px;
+    background-size: 100% 100%;
+    background-position: 0px 0px;
+    background-image: conic-gradient(from 0deg at 50% 50%, var(--color) var(--os), transparent var(--os), transparent 100%);
+    z-index: -1;
+    border-radius: 11px;
+}
+.skill:before{
+    filter: blur(6px);
+    opacity: .4;
+}
+
+[class^=skill-percent]{
+
+    background: var(--base-white);
+    padding: 3px 10px 3px;
+    border-radius: 5px;
+
+}
+
+html.dark [class^=skill-percent]{
+    background: var(--bg);
+}

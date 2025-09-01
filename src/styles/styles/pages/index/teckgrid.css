@@ -1,0 +1,86 @@
+#teckGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "side-left social-media social-media social-media case-study case-study"
+    "side-left social-media social-media social-media case-study case-study"
+    "side-left social-media social-media social-media teck-stack teck-stack"
+    "side-left github github github teck-stack teck-stack";
+    width: 1200px;
+    aspect-ratio: 3 / 2;
+
+}
+
+@media (max-width: 1250px) {
+
+
+    #teckGrid {
+
+        width: 90%;
+    }
+
+
+}
+
+@media (max-width: 769px) {
+    #teckGrid {
+        gap: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+
+
+    #teckGrid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr  1fr 1fr 1fr;
+        gap:5px;
+        grid-template-areas:
+    "case-study case-study case-study case-study"
+    "case-study case-study case-study case-study"
+    "case-study case-study case-study case-study"
+    "case-study case-study case-study case-study"
+    "teck-stack teck-stack teck-stack teck-stack"
+    "teck-stack teck-stack teck-stack teck-stack"
+    "teck-stack teck-stack teck-stack teck-stack"
+    "teck-stack teck-stack teck-stack teck-stack"
+    "side-left social-media social-media social-media"
+    "side-left social-media social-media social-media"
+    "side-left social-media social-media social-media"
+    "side-left github github github";
+        aspect-ratio: 4 / 12;
+    }
+
+
+}
+
+
+.social-media {
+    grid-area: social-media;
+}
+
+.side-left {
+    grid-area: side-left;
+}
+
+.github {
+    grid-area: github;
+}
+
+.case-study {
+    grid-area: case-study;
+}
+
+.teck-stack {
+    grid-area: teck-stack;
+}
+
+.teck-stack-rects{
+    @apply fill-black
+}
+
+
+

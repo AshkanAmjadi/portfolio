@@ -4,6 +4,18 @@
     width: clamp(200px, 30vw , 300px);
 
 }
+#heroSection{
+
+
+    height: calc(100vh - 90px);
+    margin-bottom: 20px;
+
+}
+
+.section-container{
+    width: 100%;
+    padding: 20px min(6vw , 300px);
+}
 
 .text-instagram-gradiant {
     background: #833ab4;
@@ -13,4 +25,20 @@
     );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+:is(.skill , .tech-grid-item) {
+
+    @apply p-4 max-md:p-3;
+    background: var(--bg-card);
+    position: relative;
+    border-radius: 10px;
+
+}
+.tech-grid-item{
+    padding: 0;
+}
+
+html.dark :is(.skill , .tech-grid-item) {
+    background: var(--base-darker);
 }
