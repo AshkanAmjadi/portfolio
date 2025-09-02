@@ -2,7 +2,7 @@ import {motion} from "framer-motion";
 
 const TeckStac = (props) => {
 
-    const transition = {duration: 5, yoyo: Infinity, ease: "linear", delay: 1.5};
+    const transition = {duration: 2.5, yoyo: Infinity, ease: "linear", delay: .7};
     const teckDuration = .3
     const teckStart = {opacity : 0 , filter : 'blur(5px)',scale:1.2}
     const teckAnimation = {opacity : 1,filter : 'blur(0px)',scale:1}

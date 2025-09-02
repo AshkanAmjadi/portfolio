@@ -39,17 +39,17 @@
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr  1fr 1fr 1fr;
         gap:5px;
         grid-template-areas:
-    "case-study case-study case-study case-study"
-    "case-study case-study case-study case-study"
-    "case-study case-study case-study case-study"
-    "case-study case-study case-study case-study"
+    "social-media social-media social-media social-media"
+    "social-media social-media social-media social-media"
+    "social-media social-media social-media social-media"
+    "social-media social-media social-media social-media"
     "teck-stack teck-stack teck-stack teck-stack"
     "teck-stack teck-stack teck-stack teck-stack"
     "teck-stack teck-stack teck-stack teck-stack"
     "teck-stack teck-stack teck-stack teck-stack"
-    "side-left social-media social-media social-media"
-    "side-left social-media social-media social-media"
-    "side-left social-media social-media social-media"
+    "side-left case-study case-study case-study"
+    "side-left case-study case-study case-study"
+    "side-left case-study case-study case-study"
     "side-left github github github";
         aspect-ratio: 4 / 12;
     }

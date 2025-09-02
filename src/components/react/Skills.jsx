@@ -93,7 +93,7 @@ export default function Skills() {
                     translateY: 0,
 
                 }}
-                transition={{delay: .7, duration: 2, ease: [0.053, 0.809, 0.229, 1]}}
+                transition={{delay: .5, duration: 1.2, ease: [0.053, 0.809, 0.229, 1]}}
             >
                 <h2 className='text-3-5xl font-bold mb-12'>
                     <span className='text-instagram-gradiant'>Frontend</span> Skills
@@ -121,7 +121,7 @@ export default function Skills() {
                     translateY: 0,
 
                 }}
-                transition={{delay: .3, duration: 2, ease: [0.053, 0.809, 0.229, 1]}}
+                transition={{delay: .5, duration: 1.2, ease: [0.053, 0.809, 0.229, 1]}}
             >
                 <h2 className='text-3-5xl font-bold mb-12 mt-12'>
                     <span className='text-instagram-gradiant'>Backend</span> Skills
