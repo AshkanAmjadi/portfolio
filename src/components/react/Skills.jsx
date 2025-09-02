@@ -87,7 +87,7 @@ export default function Skills() {
             <motion.div
                 className={`max-w-max`}
                 initial={{opacity: 0, filter: 'blur(12px)', translateY: 20}}
-                animate={{
+                whileInView={{
                     opacity: 1,
                     filter: 'blur(0)',
                     translateY: 0,
@@ -121,7 +121,6 @@ export default function Skills() {
                     translateY: 0,
 
                 }}
-                viewport={{once : true}}
                 transition={{delay: .3, duration: 2, ease: [0.053, 0.809, 0.229, 1]}}
             >
                 <h2 className='text-3-5xl font-bold mb-12 mt-12'>

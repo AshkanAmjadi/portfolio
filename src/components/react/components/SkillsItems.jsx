@@ -13,7 +13,6 @@ export default function SkillsItems(props) {
                 translateY: 0,
                 '--os': props.item.percent + '%'
             }}
-            viewport={{once: true}}
             transition={{
                 duration: 1.2, ease: [0.002, 0.567, 0, 1.003],
                 '--os': {
