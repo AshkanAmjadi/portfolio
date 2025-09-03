@@ -1,6 +1,8 @@
 import {AnimatePresence, motion} from "framer-motion";
 import prfile from '../../assets/me/profile.jpg'
 import {useEffect, useState} from "react";
+import HeroLeft from "./components/hero/HeroLeft.jsx";
+import HeroRight from "./components/hero/HeroRight.jsx";
 
 export default function HeroSection() {
 
@@ -19,8 +21,10 @@ export default function HeroSection() {
     }, [])
 
     return (
-        <div id='heroSection' className='flex flex-col items-center justify-center w-full  overflow-hidden'>
+        <div id='heroSection' className='flex flex-col items-center md:justify-center w-full relative overflow-hidden max-md:pt-10'>
             <motion.div
+
+                id='heroImageWraper'
                 key='heroImage'
                 initial={{opacity: 0, filter: 'blur(20px)', scale: 1.5}}
                 animate={{
@@ -99,6 +103,8 @@ export default function HeroSection() {
 
             </motion.div>
 
+            <HeroLeft />
+            <HeroRight />
         </div>
 
 

@@ -51,7 +51,7 @@ const TeckStac = (props) => {
             }
         },
         tailwind: {
-            fill: "url(#linear-gradient-2)",
+            fill: "url(#linear-gradient-tailwind)",
             transition: {
                 delay: (transition.duration * 86 / 100) + transition.delay,
                 duration: teckDuration
@@ -98,7 +98,7 @@ const TeckStac = (props) => {
                     <stop offset={1} stopColor="#ff1639" stopOpacity={0}/>
                 </linearGradient>
                 <linearGradient
-                    id="linear-gradient-2"
+                    id="linear-gradient-tailwind"
                     x1={23.71}
                     y1={1520.03}
                     x2={31.04}

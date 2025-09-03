@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 262.13 261.75">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0" y1="197.73" x2="128.03" y2="197.73" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#1d1d1d" stop-opacity="0"/>
+      <stop offset="1" stop-color="#2b2b2b"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="197.73" y1="0" x2="197.73" y2="128.03" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-3" x1="6.33" y1="6.71" x2="121.71" y2="122.09" gradientUnits="userSpaceOnUse">
+      <stop offset=".45" stop-color="#1d1d1d" stop-opacity="0"/>
+      <stop offset=".61" stop-color="#1e1e1e" stop-opacity=".14"/>
+      <stop offset=".82" stop-color="#242424" stop-opacity=".53"/>
+      <stop offset="1" stop-color="#2b2b2b"/>
+    </linearGradient>
+  </defs>
+  <path d="m240.54,135.58c10.89,0,19.72,8.83,19.72,19.72v84.87c0,10.89-8.83,19.72-19.72,19.72h-84.87c-10.89,0-19.72-8.83-19.72-19.72v-84.87c0-10.89,8.83-19.72,19.72-19.72h84.87m0-1.87h-84.87c-11.9,0-21.58,9.68-21.58,21.58v84.87c0,11.9,9.68,21.58,21.58,21.58h84.87c11.9,0,21.58-9.68,21.58-21.58v-84.87c0-11.9-9.68-21.58-21.58-21.58h0Z" style="fill: #2b2b2b; stroke-width: 0px;"/>
+  <path d="m106.45,135.58c10.89,0,19.72,8.83,19.72,19.72v84.87c0,10.89-8.83,19.72-19.72,19.72H21.58c-10.89,0-19.72-8.83-19.72-19.72v-84.87c0-10.89,8.83-19.72,19.72-19.72h84.87m0-1.87H21.58C9.68,133.71,0,143.4,0,155.3v84.87C0,252.07,9.68,261.75,21.58,261.75h84.87c11.9,0,21.58-9.68,21.58-21.58v-84.87c0-11.9-9.68-21.58-21.58-21.58h0Z" style="fill: url(#linear-gradient); stroke-width: 0px;"/>
+  <path d="m240.16,1.87c10.89,0,19.72,8.83,19.72,19.72v84.87c0,10.89-8.83,19.72-19.72,19.72h-84.87c-10.89,0-19.72-8.83-19.72-19.72V21.58c0-10.89,8.83-19.72,19.72-19.72h84.87M240.16,0h-84.87C143.4,0,133.71,9.68,133.71,21.58v84.87c0,11.9,9.68,21.58,21.58,21.58h84.87c11.9,0,21.58-9.68,21.58-21.58V21.58C261.75,9.68,252.07,0,240.16,0h0Z" style="fill: url(#linear-gradient-2); stroke-width: 0px;"/>
+  <path d="m106.45,2.24c10.89,0,19.72,8.83,19.72,19.72v84.87c0,10.89-8.83,19.72-19.72,19.72H21.58c-10.89,0-19.72-8.83-19.72-19.72V21.96C1.86,11.07,10.69,2.24,21.58,2.24h84.87m0-1.87H21.58C9.68.38,0,10.06,0,21.96v84.87C0,118.73,9.68,128.41,21.58,128.41h84.87c11.9,0,21.58-9.68,21.58-21.58V21.96c0-11.9-9.68-21.58-21.58-21.58h0Z" style="fill: url(#linear-gradient-3); stroke-width: 0px;"/>
+</svg>

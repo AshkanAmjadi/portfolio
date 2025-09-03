@@ -5,6 +5,7 @@ import CaseStudy from "./components/teck-grid/CaseStudy.jsx";
 import {useEffect, useState} from "react";
 import Github from "./components/teck-grid/Github.jsx";
 import SocialMedia from "./components/teck-grid/SocialMedia.jsx";
+import SideLeft from "./components/teck-grid/SideLeft.jsx";
 
 export default function TechGrid() {
 
@@ -99,7 +100,14 @@ export default function TechGrid() {
                     whileInView={{opacity: 1, filter: 'blur(0px)', translateX: 0}}
                     transition={{delay: 0, duration: 1, ease: [0.623, 0.421, 0, 0.985]}}
                     viewport={{amount : amoutOfView}}
+                    onViewportEnter={()=>{setInview('sideLeft')}}
+                    onViewportLeave={()=>{setInview('sideLeft',false)}}
                 >
+
+                    {
+                        tecks.map((e,index)=> e.name === 'sideLeft' && e.inview ? <SideLeft key={index} /> : '')
+                    }
+
 
                 </motion.div>
                 <motion.div

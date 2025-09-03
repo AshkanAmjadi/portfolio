@@ -68,7 +68,7 @@ html.dark {
 
     --base-white: hsl(from var(--base-color) h s calc(l + 20));
     --base-lighter: hsl(from var(--base-color) h s calc(l + 10));
-    --base-darker: hsl(from var(--base-color) h s calc(l - 5));
+    --base-darker: hsl(from var(--base-color) h s calc(l - 6));
     --base-black: hsl(from var(--base-color) h s calc(l - 10));
 
 

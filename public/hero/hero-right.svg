@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 128.41 395.46">
+  <defs>
+    <linearGradient id="linear-gradient" x1="64.4" y1="395.46" x2="64.4" y2="267.43" gradientUnits="userSpaceOnUse">
+      <stop offset=".26" stop-color="#1d1d1d" stop-opacity="0"/>
+      <stop offset=".47" stop-color="#1e1e1e" stop-opacity=".13"/>
+      <stop offset=".74" stop-color="#232323" stop-opacity=".49"/>
+      <stop offset="1" stop-color="#2b2b2b"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="64.02" y1="0" x2="64.02" y2="128.03" gradientUnits="userSpaceOnUse">
+      <stop offset=".34" stop-color="#1d1d1d" stop-opacity="0"/>
+      <stop offset=".53" stop-color="#1f1f1f" stop-opacity=".16"/>
+      <stop offset=".81" stop-color="#252525" stop-opacity=".6"/>
+      <stop offset="1" stop-color="#2b2b2b"/>
+    </linearGradient>
+  </defs>
+  <path d="m106.83,135.58c10.89,0,19.72,8.83,19.72,19.72v84.87c0,10.89-8.83,19.72-19.72,19.72H21.96c-10.89,0-19.72-8.83-19.72-19.72v-84.87c0-10.89,8.83-19.72,19.72-19.72h84.87m0-1.87H21.96c-11.9,0-21.58,9.68-21.58,21.58v84.87c0,11.9,9.68,21.58,21.58,21.58h84.87c11.9,0,21.58-9.68,21.58-21.58v-84.87c0-11.9-9.68-21.58-21.58-21.58h0Z" style="fill: #2b2b2b; stroke-width: 0px;"/>
+  <path d="m106.83,269.29c10.89,0,19.72,8.83,19.72,19.72v84.87c0,10.89-8.83,19.72-19.72,19.72H21.96c-10.89,0-19.72-8.83-19.72-19.72v-84.87c0-10.89,8.83-19.72,19.72-19.72h84.87m0-1.87H21.96c-11.9,0-21.58,9.68-21.58,21.58v84.87c0,11.9,9.68,21.58,21.58,21.58h84.87c11.9,0,21.58-9.68,21.58-21.58v-84.87c0-11.9-9.68-21.58-21.58-21.58h0Z" style="fill: url(#linear-gradient); stroke-width: 0px;"/>
+  <path d="m106.45,1.86c10.89,0,19.72,8.83,19.72,19.72v84.87c0,10.89-8.83,19.72-19.72,19.72H21.58c-10.89,0-19.72-8.83-19.72-19.72V21.58C1.87,10.69,10.69,1.86,21.58,1.86h84.87m0-1.86H21.58C9.68,0,0,9.68,0,21.58v84.87c0,11.9,9.68,21.58,21.58,21.58h84.87c11.9,0,21.58-9.68,21.58-21.58V21.58c0-11.9-9.68-21.58-21.58-21.58h0Z" style="fill: url(#linear-gradient-2); stroke-width: 0px;"/>
+</svg>

@@ -165,7 +165,7 @@ const Github = () => {
                     <stop offset={0} stopColor="#ff1639"/>
                     <stop offset={1} stopColor="#ff1639" stopOpacity={0}/>
                 </linearGradient>
-                <filter id="drop-shadow-8" filterUnits="userSpaceOnUse">
+                <filter id="drop-shadow-laravel-tailwind" filterUnits="userSpaceOnUse">
                     <feOffset dx={7} dy={7}/>
                     <feGaussianBlur result="blur-4" stdDeviation={5}/>
                     <feFlood floodColor="#000" floodOpacity={0.75}/>
@@ -474,7 +474,7 @@ const Github = () => {
                 animate={{opacity: 1, filter: 'blur(0px)', translateX: 0}}
                 transition={{delay: 1.4, duration: 1, ease: [0.623, 0.421, 0, 0.985]}}
                 style={{
-                    filter: "url(#drop-shadow-8)",
+                    filter: "url(#drop-shadow-laravel-tailwind)",
                 }}
             >
                 <path
