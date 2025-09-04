@@ -13,6 +13,7 @@ export default function SkillsItems(props) {
                 translateY: 0,
                 '--os': props.item.percent + '%'
             }}
+            viewport={{amount : .7}}
             transition={{
                 duration: 1.2, ease: [0.002, 0.567, 0, 1.003],
                 '--os': {
@@ -36,7 +37,7 @@ export default function SkillsItems(props) {
         >
             <div
                 className={`skill skill-${props.index}  flex items-center gap-6 max-md:p-5 max-md:gap-2 mt-1 mb-1 ${props.item.observed && props.item.percent ? '' : 'opacity-45'}`}
-                style={{'--color': props.item.color}}>
+                style={{'--color': props.item.color ?? '#5f7bba'}}>
 
                 <div>
                     <img src={props.item.image} className='skill-img' loading='lazy' alt={props.item.image} />

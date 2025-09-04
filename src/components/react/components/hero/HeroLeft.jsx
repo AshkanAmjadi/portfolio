@@ -27,7 +27,7 @@ const HeroLeft = () => {
             <div className="hero-l-r-t hero-box"></div>
             <div className="hero-l-r-b hero-box have place-items-center place-content-center">
                 <p className='font-bold text-4xl pb-1'>
-                    +7
+                    +5
                 </p>
                 <p className='font-light text-md' style={{marginTop : '10%'}}>
                     years

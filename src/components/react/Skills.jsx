@@ -82,7 +82,7 @@ export default function Skills() {
 
     return (
 
-        <div id='skill-section ' className={`mt-20 w-full flex flex-col items-center`}>
+        <div id='skill-section' className={`fix-section-container mt-10 w-full flex flex-col items-center overflow-hidden`}>
 
             <motion.div
                 className={`max-w-max`}
@@ -101,7 +101,7 @@ export default function Skills() {
             </motion.div>
 
 
-            <div id='skills' className='grid gap-10 grid-cols-2 max-md:grid-cols-1 max-md:gap-4  w-full overflow-hidden '>
+            <div id='skills' className='content-wraper grid gap-10 grid-cols-2 max-md:grid-cols-1 max-md:gap-4  w-full '>
                 {
                     frontend.map((item, index,array) => {
                         return (
@@ -130,7 +130,7 @@ export default function Skills() {
 
 
             <div id='skills'
-                 className='grid gap-10 grid-cols-2 max-md:grid-cols-1 max-md:gap-4  w-full overflow-hidden '>
+                 className='content-wraper grid gap-10 grid-cols-2 max-md:grid-cols-1 max-md:gap-4  w-full '>
                 {
                     backend.map((item, index, array) => {
                         return (

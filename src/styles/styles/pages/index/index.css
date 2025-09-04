@@ -13,7 +13,7 @@
     content: '';
     width: 120%;
     height: 120%;
-    top: 30%;
+    top: 10%;
     left: 50%;
     translate: -50% 0;
     filter: blur(100px);
@@ -32,6 +32,82 @@
     width: 100%;
     padding: 20px min(6vw, 300px);
 }
+.fix-section-container {
+    width: 100%;
+    place-items: center;
+}
+.fix-section-container .content-wraper {
+    width: 1200px;
+}
+
+@media (max-width: 1250px) {
+
+
+    .fix-section-container .content-wraper {
+        width: 90%;
+    }
+
+
+}
+
+
+
+/*timeline*/
+
+.timeline{
+
+}
+.timeline-box{
+    position: relative;
+}
+.timeline-box .indicator{
+    @apply w-5 h-5 max-md:w-3 max-md:h-3 bg-indigo-600 rounded-full
+}
+.timeline-box .indicator:before{
+    @apply border border-indigo-500 rounded-full;
+    content: '';
+    position: absolute;
+    inset: -35%;
+}
+.timeline-box:before{
+    @apply bg-zinc-400 ;
+    content: '';
+    height: 100%;
+    width: 1px;
+    position: absolute;
+    left: 5%;
+}
+.timeline .left{
+    width: 10%;
+}
+.timeline .right{
+    width: 90%;
+}
+
+.timeline .contnet{
+    background-color: var(--base-darker);
+}
+.timeline .contnet ul.📕 li{
+    list-style: '📕';
+}
+
+
+.timeline .contnet ul.✅ li{
+    list-style: '✅';
+}
+
+
+.timeline .contnet ul.⭕ li{
+    list-style: '⭕';
+}
+
+
+
+
+
+
+
+
 
 .text-instagram-gradiant {
     background: #833ab4;

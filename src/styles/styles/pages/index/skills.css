@@ -1,11 +1,6 @@
-#skills{
-
-    padding: 20px min(6vw , 300px);
-
-}
 
 .skill-img {
-    @apply min-w-20 max-md:min-w-12;
+    @apply min-w-16 max-md:min-w-12;
 
 }
 
