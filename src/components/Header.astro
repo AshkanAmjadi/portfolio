@@ -2,6 +2,7 @@
 import '../styles/styles/header/header.css'
 import Github from "./icons/github.astro";
 import profile from '../assets/me/profile.jpg'
+import Sign from '../components/react/components/header/Sign'
 ---
 
 
@@ -24,7 +25,8 @@ import profile from '../assets/me/profile.jpg'
         </div>
 
     </div>
-    <div class="middle">
+    <div class="middle place-items-center">
+        <Sign client:load />
     </div>
     <div class="right">
         <a href="https://github.com/AshkanAmjadi" target="_blank" class="github">

@@ -5,15 +5,14 @@ export default function SkillsItems(props) {
 
     return (
         <motion.div
-            initial={{opacity: 0, scale: 1.2, filter: 'blur(8px)', translateY: 40, '--os': '0%'}}
+            initial={{opacity: 0, scale: 1.15, filter: 'blur(8px)' , '--os': '0%'}}
             whileInView={{
                 opacity: 1,
                 scale: 1,
                 filter: 'blur(0)',
-                translateY: 0,
                 '--os': props.item.percent + '%'
             }}
-            viewport={{amount : .7}}
+            viewport={{amount : .5}}
             transition={{
                 duration: 1.2, ease: [0.002, 0.567, 0, 1.003],
                 '--os': {
