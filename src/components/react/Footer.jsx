@@ -54,14 +54,9 @@ export default function Footer() {
                 <p className="mt-6 font-bold text-center text-md">contact me</p>
 
                 <div className="flex items-center gap-4 mt-6 mb-10">
-                    <a href="#"
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=Ashkan.amjadi8412@gmail.com&su=hi Ashkan&body=Hello%2C%0A%0AI%20would%20like%20to%20discuss%20a%20potential%20collaboration.%0A%0ABest%20regards%2C%0A[Your%20Name]"
                        className="font-medium text-xs text-gray-800 hover:text-black transition-all bg-zinc-100 pt-3 pb-2.5 px-4 rounded-md">
                         📧 By (Gmail)
-                    </a>
-                    <div className="h-8 w-px bg-white"></div>
-                    <a href="#"
-                       className="font-medium text-xs text-gray-800 hover:text-black transition-all bg-zinc-100 pt-3 pb-2.5 px-4 rounded-md">
-                        📨 In Your Default App
                     </a>
                 </div>
                 <p className="mt-6 font-light text-center text-md mb-10">build with 🖥️ and ❤️</p>
