@@ -9,11 +9,13 @@ export default function HeroSection() {
     const [scope, setScope] = useState('')
 
     const scoops = [
-        'developre 👨‍💻',
-        'designer 🌟',
-        '🎯 product builder',
-        '🔥 JavaScript ninja',
-        'create by Laravel ⚡',
+        'Full‑Stack Developer 👨‍💻',
+        '⚡ Frontend & Backend Architect',
+        '🎯 Web Performance Optimizer',
+        '🧠 From Idea to Deployment',
+        '⚙️ UX to API Problem-Solver',
+        'API & UI Craftsman',
+        '💡 Scalable Web Solutions Engineer',
     ]
 
     useEffect(() => {
@@ -72,7 +74,7 @@ export default function HeroSection() {
                 exit={{opacity: 0, filter: 'blur(20px)', transition: {delay: 0, duration: 0.05}}}
             >
 
-                fullstck - web -
+
 
                 <span id={`scoopElement`} className='inline-block'>
                         <AnimatePresence mode='wait'>
