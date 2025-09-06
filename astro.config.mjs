@@ -8,7 +8,6 @@ import tailwind from '@astrojs/tailwind';
 export default defineConfig({
 
     site: 'https://ashkanamjadi.github.io',
-    base : '/portfolio/',
     integrations: [react(),tailwind()],
     devToolbar : {
       enabled : false
