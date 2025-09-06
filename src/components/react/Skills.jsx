@@ -11,46 +11,46 @@ export default function Skills() {
         {
             name: 'HTML',
             color: '#E15026',
-            image: '/icon/html-mini.svg',
+            image: './icon/html-mini.svg',
             percent: 98,
         },
         {
             name: 'CSS',
             color: '#663693',
-            image: '/icon/css-mini.svg',
+            image: './icon/css-mini.svg',
             percent: 90,
         },
         {
             name: 'Java Script',
             color: '#EDCB00',
-            image: '/icon/js-mini.svg',
+            image: './icon/js-mini.svg',
             percent: 86,
         },
         {
             name: 'tailwind css',
             color: '#23BBBC',
-            image: '/icon/tailwind-mini.svg',
+            image: './icon/tailwind-mini.svg',
             percent: 90,
         },
         {
             name: 'React Js',
             color: '#4CC7ED',
-            image: '/icon/react-mini.svg',
+            image: './icon/react-mini.svg',
             percent: 40,
         },
         {
             name: 'Astro Js',
             color: '#FF5D01',
-            image: '/icon/astro-mini.svg',
+            image: './icon/astro-mini.svg',
             percent: 30,
         },
         {
             name: 'Vue Js',
-            image: '/icon/vue-mini.svg',
+            image: './icon/vue-mini.svg',
         },
         {
             name: 'Next Js',
-            image: '/icon/next-mini.svg'
+            image: './icon/next-mini.svg'
         }
 
     ])
@@ -59,24 +59,24 @@ export default function Skills() {
         {
             name: 'PHP',
             color: '#502C86',
-            image: '/icon/php-mini.svg',
+            image: './icon/php-mini.svg',
             percent: 80,
             observed: false
         },
         {
             name: 'Laravel',
             color: '#EC1C24',
-            image: '/icon/laravel-mini.svg',
+            image: './icon/laravel-mini.svg',
             percent: 90,
             observed: false
         },
         {
             name: 'Express Js',
-            image: '/icon/express-mini.svg',
+            image: './icon/express-mini.svg',
         },
         {
             name: 'Node Js',
-            image: '/icon/node-mini.svg'
+            image: './icon/node-mini.svg'
         }
     ])
 
