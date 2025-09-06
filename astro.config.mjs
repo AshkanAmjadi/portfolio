@@ -7,7 +7,7 @@ import tailwind from '@astrojs/tailwind';
 // https://astro.build/config
 export default defineConfig({
 
-    site: 'https://ashkanamjadi.github.io',
+    site: 'https://ashkanamjadi.github.io/portfolio',
     base : '/portfolio/',
     integrations: [react(),tailwind()],
     devToolbar : {
